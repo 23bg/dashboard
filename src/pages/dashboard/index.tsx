@@ -12,18 +12,20 @@ import { RecentSales } from './components/recent-sales'
 import { Overview } from './components/overview'
 
 import MainNav from '@/components/mainNav'
+import { ScrollArea } from '@/components/ui/scroll-area'
 
 
 export default function Dashboard() {
   return (
     <Layout className='dark:bg-zinc-950'>
       {/* ===== Top Heading ===== */}
-      <Layout.Header className='border-b border-zinc-600 bg-blend-color-burn fixed w-full dark:bg-zinc-950'>
+      <Layout.Header className='border-b dark:border-zinc-800 border-zinc-200 shadow-2xl dark:shadow-black shadow-zinc-50 bg-blend-color-burn fixed w-full dark:bg-zinc-950 h-14'>
       <MainNav/>
       </Layout.Header> 
 
       {/* ===== Main ===== */}
       <Layout.Body className='lg:mx-36 md:mx-14 mt-16 h-full'>
+        <ScrollArea>
         <div className='mb-2 flex items-center justify-between space-y-2'>
           <h1 className='text-2xl font-bold tracking-tight'>Dashboard</h1>
           <div className='flex items-center space-x-2'>
@@ -170,6 +172,7 @@ export default function Dashboard() {
             </div>
           </TabsContent>
         </Tabs>
+        </ScrollArea>
       </Layout.Body>
     </Layout>
   )

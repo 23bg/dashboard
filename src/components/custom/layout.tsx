@@ -32,7 +32,7 @@ const Layout = ({ className, fixed = false, ...props }: LayoutProps) => {
         ref={divRef}
         data-layout='layout'
         className={cn(
-          'h-full overflow-auto',
+          'h-full overflow-auto dark:bg-zinc-950 bg-gray-100',
           fixed && 'flex flex-col',
           className
         )}
@@ -90,7 +90,7 @@ const Body = React.forwardRef<
       ref={ref}
       data-layout='body'
       className={cn(
-        'px-4 py-6 md:overflow-hidden md:px-8',
+        'px-4 py-6 md:overflow-hidden md:px-8 dark:bg-zinc-950 bg-zinc-100',
         contextVal && contextVal.fixed && 'flex-1',
         className
       )}

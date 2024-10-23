@@ -60,7 +60,7 @@ export default function Chats() {
   return (
     <Layout fixed>
       {/* ===== Top Heading ===== */}
-      <Layout.Header className='border-b border-zinc-600 bg-blend-color-burn fixed w-full'>
+      <Layout.Header className='border-b dark:border-zinc-800 border-zinc-200 shadow-2xl dark:shadow-black shadow-zinc-50 bg-blend-color-burn fixed w-full dark:bg-zinc-950 h-14'>
       <MainNav/>
       </Layout.Header> 
 

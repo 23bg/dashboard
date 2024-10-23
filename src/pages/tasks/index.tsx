@@ -9,9 +9,9 @@ export default function Tasks() {
   return (
     <Layout>
       {/* ===== Top Heading ===== */}
-      <Layout.Header className="border-b border-gray-100 bg-blend-color-burn fixed w-full">
-        <MainNav />
-      </Layout.Header>
+      <Layout.Header className='border-b dark:border-zinc-800 border-zinc-200 shadow-2xl dark:shadow-black shadow-zinc-50 bg-blend-color-burn fixed w-full dark:bg-zinc-950 h-14'>
+      <MainNav/>
+      </Layout.Header> 
 
       <Layout.Body className="lg:mx-32 md:mx-14 mt-16 overflow-clip">
       <ScrollArea className="w-full h-full overflow-y-auto">
